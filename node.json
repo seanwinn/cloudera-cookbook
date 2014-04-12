@@ -1,0 +1,19 @@
+{
+  "apt": {
+    "cacher_ipaddress": "10.0.6.18"
+  },
+  "java": {
+    "install_flavor": "oracle",
+    "jdk_version": "7",
+    "oracle": {
+      "accept_oracle_download_terms": "true"
+    }
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[apt::cacher-client]",
+    "recipe[apt::cloudera]",
+    "recipe[java]"
+  ]
+}
+
