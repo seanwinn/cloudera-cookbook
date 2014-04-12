@@ -1,0 +1,4 @@
+.cache
+.backup
+chef-client-running.pid
+chef-stacktrace.out
