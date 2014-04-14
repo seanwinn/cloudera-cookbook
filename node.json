@@ -10,13 +10,14 @@
     }
   },
   "cloudera": {
-    "cmserver_hostname": "hadoop-node-1c2a9d59-7f2b-4fb6-a9fb-e88e83174666",
-    "cmserver_port": "7182"
+    "server_host": "cm",
+    "server_port": "7182"
   },
   "run_list": [
     "recipe[apt]",
     "recipe[apt::cacher-client]",
     "recipe[apt::cloudera]",
+    "recipe[hostsfile]",
     "recipe[java]",
     "recipe[cloudera]"
   ]
